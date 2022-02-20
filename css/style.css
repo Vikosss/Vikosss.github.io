@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.title_main {
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 100px 0 100px 0;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+
+h2.title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cover {
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 62px;
+    justify-content: space-between;
+}
+
+.divider {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+
+.header-container {
+    height: 800px;
+    background-color: #ffd302;
+    overflow: hidden;
+    position: relative;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    display: flex;
+}
+
+.header-img {
+    position: absolute;
+    top:0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.title__cover {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 84px;
+    line-height: 53px;
+    position: absolute;
+    bottom: 189px;
+    text-transform: uppercase;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.about__title {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 65px;
+    line-height: 72px;
+}
+
+.title1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px;
+}
+
+.skills_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    padding-left: 70px;
+    margin-top: 20px;
+    line-height: 39px;
+    padding-right: 20px;
+}
+
+.about__content {
+    display: flex
+}
+
+.about__image, .about__info {
+    flex-basis: 50%;
+}
+
+.about__info {
+    padding-left: 50px;
+}
+
+.title__skills, .works__title {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 65px;
+    line-height: 72px;
+}
+
+.works__image {
+    position: relative;
+}
+
+.arrow1 {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.arrow1 img {
+    display: block;
+}
+
+.arrow2 img {
+    display: block;
+}
+
+.arrow2 {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.arrow1, .arrow2 {
+    cursor: pointer;
+}
+
+.slider {
+
+}
+
+.works-img {
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    display: block;
+}
+
+.footer__title {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 65px;
+    line-height: 72px;
+}
+
+.footer__main {
+    padding-top: 60px;
+    padding-bottom: 260px;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 40px;
+}
+
+.footer__contact a:first-child {
+    margin-bottom: 40px;
+}
+
+.footer__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__icons a {
+    margin: 0 10px;
+}
+
+.title1__mobile {
+    display: none;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.burger {
+    display: none !important;
+    position: relative;
+    z-index: 300;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+    .about__content {
+        display: block;
+        padding: 0 100px;
+    }
+
+    .about__info {
+        padding: 0;
+    }
+
+    .about__text {
+        margin: 30px 0 0 0;
+        padding: 0;
+    }
+
+    .title1 {
+        display: none;
+    }
+
+    .skills__text {
+        text-align: center;
+    }
+
+    .about__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .title1__mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        font-weight: 300;
+        margin-bottom: 46px;
+    }
+
+    .title1__mobile h2 {
+        font-size: 28px;
+    }
+
+    .skills {
+        padding: 0 100px;
+    }
+
+    .skill img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .footer__main {
+        padding-bottom: 100px;
+    }
+
+    .title__cover {
+        font-size: 46px;
+        line-height: 29px;
+    }
+
+    .header__menu a {
+        font-size: 16px;
+    }
+}
+
+.skills__text {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .header__menu {
+        position: fixed;
+        display: block;
+        width: 100%;
+        bottom: 0;
+        left: 100%;
+        transition: left 0.15s ease-in-out;
+        z-index: 100;
+        background-color: white;
+        top: 0
+    }
+
+    .burger {
+        display: block !important;
+    }
+
+    .header__nav {
+        position: absolute;
+        flex-direction: column;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header__nav a {
+        font-size: 30px;
+    }
+
+    .about__content {
+        padding: 0 20px;
+    }
+
+    .title1__mobile {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .skills {
+        padding: 0 20px;
+    }
+
+    .skills_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skill {
+        flex-basis: 50%;
+        margin-bottom: 25px;
+    }
+
+    .skill:last-child {
+        margin: 0;
+    }
+
+    .title_main {
+        font-size: 32px;
+        margin: 40px 0;
+    }
+
+    .title1__mobile h2 {
+        font-size: 16px;
+    }
+
+    .arrow1 img, .arrow2 img {
+        width: 37px;
+    }
+}
+
+.show-menu {
+    display: block;
+    left: 0;
+}
+
+
